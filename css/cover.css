@@ -90,7 +90,10 @@ nav a{
 
   .hamburger {
     display: flex;
-    padding-left: 120px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
   }
 }
 
@@ -416,23 +419,25 @@ nav a{
 /* Mission and Vision */
 .mission-vision {
   display: flex;
-  justify-content: space-around;
-  padding: 50px;
+  flex-wrap: wrap;
   background: #f1f1f1;
   color: #003a6b;
   animation: fadeIn 2s ease-in;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .mission-vision h2{
   color: #003a6b;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .mission, .vision {
-  width: fit-content;
+  width: 50%;
   justify-content: center;
   align-items: center;
   text-align: center;
