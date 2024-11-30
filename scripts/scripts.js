@@ -162,6 +162,7 @@ function showSlidesTestimonials(n, manual = false) {
   slides[(slideIndexTestimonials - 1 + slides.length) % slides.length].style.display = "block";
   dots[(slideIndexTestimonials - 1 + dots.length) % dots.length].className += " active";
 
+  manual = false;
   if (!manual) {
     autoSlideTimeoutTestimonials = setTimeout(showSlidesTestimonials, 2000);
   }
